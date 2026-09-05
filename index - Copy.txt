@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mehedi Hasan Siddique | CSE Undergraduate & Software Developer</title>
+    <meta name="description" content="Portfolio of Mehedi Hasan Siddique — CSE undergraduate building software with Java, Spring Boot, Python, C, web technologies, networking, embedded systems and AI/ML." />
+    <meta name="author" content="Mehedi Hasan Siddique" />
+    <meta name="theme-color" content="#07090d" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mehedi Hasan Siddique | Portfolio" />
+    <meta property="og:description" content="CSE undergraduate and software developer building across Java, AI/ML, networking and systems." />
+    <meta property="og:url" content="https://demo-portfolio-ecru.vercel.app/" />
+    <meta property="og:image" content="https://demo-portfolio-ecru.vercel.app/assets/images/profile.webp" />
+
+    <link rel="canonical" href="https://demo-portfolio-ecru.vercel.app/" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mehedi Hasan Siddique",
+      "url": "https://demo-portfolio-ecru.vercel.app/",
+      "image": "https://demo-portfolio-ecru.vercel.app/assets/images/profile.webp",
+      "jobTitle": "Computer Science & Engineering Undergraduate",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Southeast University"
+      },
+      "sameAs": [
+        "https://github.com/Darkraider888",
+        "https://www.linkedin.com/in/mehedi-hasan-siddique-0a19643a1/",
+        "https://orcid.org/0009-0000-7124-7041",
+        "https://scholar.google.com/citations?user=8WcSaLIAAAAJ&hl=en",
+        "https://x.com/Mehedi_Hasan_24"
+      ]
+    }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="Mehedi Hasan Siddique home">
+            <span class="brand-mark">MH</span>
+            <span class="brand-text">Mehedi Hasan Siddique</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#research">Research</a>
+            <a href="#journey">Journey</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a class="icon-btn" href="https://github.com/Darkraider888" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme">
+                <i class="fa-solid fa-sun" id="themeIcon" aria-hidden="true"></i>
+            </button>
+            <button class="icon-btn mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="reveal is-visible">
+                <div class="status-pill">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Interested in internships, research & collaboration
+                </div>
+
+                <h1>
+                    Building software across
+                    <span class="accent">Java, AI & systems.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    I'm <strong>Mehedi Hasan Siddique</strong>, a Computer Science & Engineering undergraduate at Southeast University. I learn by building practical software, exploring intelligent systems, and understanding how networks and computers work underneath the interface.
+                </p>
+
+                <div class="hero-role">Software development · AI/ML · networking · embedded systems</div>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#work">
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                        Explore my work
+                    </a>
+                    <a class="btn" href="https://github.com/Darkraider888" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                    <a class="btn" href="assets/files/Mehedi_Hasan_Siddique_CV.pdf" download>
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        Résumé
+                    </a>
+                </div>
+
+                <div class="hero-meta" aria-label="Quick information">
+                    <div class="hero-meta-item">
+                        <small>Based in</small>
+                        <strong>Dhaka, Bangladesh 🇧🇩</strong>
+                    </div>
+                    <div class="hero-meta-item">
+                        <small>Education</small>
+                        <strong>B.Sc. in CSE</strong>
+                    </div>
+                    <div class="hero-meta-item">
+                        <small>Research</small>
+                        <strong>Published + ongoing</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portrait-wrap reveal is-visible">
+                <div class="portrait-card">
+                    <img src="assets/images/profile.webp" alt="Portrait of Mehedi Hasan Siddique" width="720" height="1080" fetchpriority="high" />
+                    <div class="portrait-overlay">
+                        <strong>Mehedi Hasan Siddique</strong>
+                        <span>@Darkraider888</span>
+                    </div>
+                </div>
+                <div class="float-badge one"><i class="fa-brands fa-java" aria-hidden="true"></i> Java / Spring</div>
+                <div class="float-badge two"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Cisco Networking</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-kicker">01 · About</div>
+            <h2 class="section-title">I learn technology by <span class="accent">building with it.</span></h2>
+            <p class="section-intro">My interests span software engineering, AI/ML, networking, cybersecurity and low-level systems. I prefer turning coursework and curiosity into working projects instead of only collecting technologies on a résumé.</p>
+
+            <div class="about-grid">
+                <article class="card about-copy reveal">
+                    <p>My strongest direction is software development with <strong>Java</strong>, alongside Python and C. I have worked with Spring Boot, JavaFX, databases, web technologies, cloud deployment tools, and development environments across Windows and Linux.</p>
+                    <p>I also study Cisco networking, embedded and assembly concepts, cybersecurity tooling, and research topics such as AI/ML and next-generation communication systems.</p>
+                    <div class="quote-line">Learn deeply. Build useful things. Understand why they work.</div>
+                </article>
+
+                <aside class="card focus-panel reveal" aria-label="Current focus areas">
+                    <div class="focus-list">
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fa-brands fa-java" aria-hidden="true"></i></div>
+                            <div><h3>Java & Spring Boot</h3><p>Backend architecture, security, data access and full-stack application development.</p></div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                            <div><h3>AI & Machine Learning</h3><p>Learning intelligent systems through experiments, coursework and application projects.</p></div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></div>
+                            <div><h3>Networking & Systems</h3><p>Cisco IOS CLI, Packet Tracer, Linux, embedded systems and low-level computing.</p></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="work">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-kicker">02 · Selected Work</div>
+                    <h2 class="section-title">Projects that show how I <span class="accent">think and build.</span></h2>
+                    <p class="section-intro">A mix of full-stack software, frontend applications, cryptography, algorithms and low-level programming.</p>
+                </div>
+                <a class="section-link" href="https://github.com/Darkraider888?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+
+            <article class="card featured-project reveal">
+                <div class="featured-content">
+                    <div class="project-label">Flagship project</div>
+                    <h3>CampusVoice</h3>
+                    <p>A university-focused social platform where students can share campus problems, suggestions and thoughts, interact through likes and comments, upload images, manage profiles, and track problem resolution through an admin workflow.</p>
+
+                    <div class="project-tech">
+                        <span class="tech-chip">Java 25</span>
+                        <span class="tech-chip">Spring Boot</span>
+                        <span class="tech-chip">Spring Security</span>
+                        <span class="tech-chip">MySQL</span>
+                        <span class="tech-chip">Thymeleaf</span>
+                        <span class="tech-chip">Docker</span>
+                        <span class="tech-chip">Render</span>
+                        <span class="tech-chip">Aiven</span>
+                        <span class="tech-chip">Cloudinary</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://campusvoice-2pvw.onrender.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            Live application
+                        </a>
+                        <a class="btn" href="https://github.com/Darkraider888/CampusVoice" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            Source code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="featured-visual" aria-hidden="true">
+                    <div class="visual-window">
+                        <div class="window-bar">
+                            <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="mock-row red"></div>
+                            <div class="mock-row mid"></div>
+                            <div class="mock-row short"></div>
+                            <div class="mock-cards">
+                                <div class="mock-card"></div>
+                                <div class="mock-card"></div>
+                                <div class="mock-card"></div>
+                                <div class="mock-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="projects-grid">
+                <article class="card project-card reveal">
+                    <span class="project-number">01</span>
+                    <div class="project-icon"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></div>
+                    <h3>ORIVO Emotion Detector</h3>
+                    <p>A React + TypeScript frontend for an emotion-detection API with registration, text analysis, emotion history and saved-record management.</p>
+                    <div class="project-tech"><span class="tech-chip">React</span><span class="tech-chip">TypeScript</span><span class="tech-chip">Vite</span><span class="tech-chip">API</span></div>
+                    <div class="card-links">
+                        <a href="https://orivo-emotion-detector.netlify.app/" target="_blank" rel="noopener noreferrer">Live <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Darkraider888/Orivo-Emotion-Dectector" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <span class="project-number">02</span>
+                    <div class="project-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                    <h3>DES Implementation</h3>
+                    <p>A complete educational implementation of the Data Encryption Standard in C, built to understand the internal stages of a classic block cipher.</p>
+                    <div class="project-tech"><span class="tech-chip">C</span><span class="tech-chip">Cryptography</span><span class="tech-chip">Security</span></div>
+                    <div class="card-links"><a href="https://github.com/Darkraider888/DES-implemenation-code" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a></div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <span class="project-number">03</span>
+                    <div class="project-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
+                    <h3>Catch & Dodge</h3>
+                    <p>A minimalist browser arcade game built with vanilla JavaScript and HTML5 Canvas: collect coins, avoid bombs and survive.</p>
+                    <div class="project-tech"><span class="tech-chip">JavaScript</span><span class="tech-chip">HTML5 Canvas</span><span class="tech-chip">CSS</span></div>
+                    <div class="card-links">
+                        <a href="https://darkraider888.github.io/Catch-Dodge/" target="_blank" rel="noopener noreferrer">Play <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Darkraider888/Catch-Dodge" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <span class="project-number">04</span>
+                    <div class="project-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                    <h3>8086 Assembly Labs</h3>
+                    <p>Low-level programming exercises focused on registers, instructions, memory operations and core 8086 assembly concepts.</p>
+                    <div class="project-tech"><span class="tech-chip">Assembly</span><span class="tech-chip">8086</span><span class="tech-chip">Low Level</span></div>
+                    <div class="card-links"><a href="https://github.com/Darkraider888/Assembly-Language" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a></div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <span class="project-number">05</span>
+                    <div class="project-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+                    <h3>Data Structures</h3>
+                    <p>Practice implementations of fundamental structures and algorithms, including trees, graphs, stacks, queues and searching.</p>
+                    <div class="project-tech"><span class="tech-chip">C</span><span class="tech-chip">Data Structures</span><span class="tech-chip">Algorithms</span></div>
+                    <div class="card-links"><a href="https://github.com/Darkraider888/data-structure-" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a></div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <span class="project-number">06</span>
+                    <div class="project-icon"><i class="fa-brands fa-java" aria-hidden="true"></i></div>
+                    <h3>Java Practice</h3>
+                    <p>University exercises and Java practice covering object-oriented programming, problem solving and programming fundamentals.</p>
+                    <div class="project-tech"><span class="tech-chip">Java</span><span class="tech-chip">OOP</span><span class="tech-chip">Problem Solving</span></div>
+                    <div class="card-links"><a href="https://github.com/Darkraider888/JavaPractice" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-kicker">03 · Tech Arsenal</div>
+            <h2 class="section-title">The tools behind the <span class="accent">work.</span></h2>
+            <p class="section-intro">No arbitrary percentage bars. These are technologies I have used, studied or worked with in projects and coursework. Hover over a logo to see its name.</p>
+
+            <div class="card skills-shell reveal">
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Languages & Web</h3><span class="skill-group-note">core programming + frontend</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Java" tabindex="0"><img src="https://skillicons.dev/icons?i=java" alt="Java" /></span>
+                        <span class="tech-logo" data-label="Python" tabindex="0"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></span>
+                        <span class="tech-logo" data-label="C" tabindex="0"><img src="https://skillicons.dev/icons?i=c" alt="C" /></span>
+                        <span class="tech-logo" data-label="C++" tabindex="0"><img src="https://skillicons.dev/icons?i=cpp" alt="C++" /></span>
+                        <span class="tech-logo" data-label="JavaScript" tabindex="0"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /></span>
+                        <span class="tech-logo" data-label="HTML5" tabindex="0"><img src="https://skillicons.dev/icons?i=html" alt="HTML5" /></span>
+                        <span class="tech-logo" data-label="CSS3" tabindex="0"><img src="https://skillicons.dev/icons?i=css" alt="CSS3" /></span>
+                        <span class="tech-logo" data-label="PHP" tabindex="0"><img src="https://skillicons.dev/icons?i=php" alt="PHP" /></span>
+                        <span class="tech-logo wordmark" data-label="Assembly Language" tabindex="0">ASM</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Frameworks & Development</h3><span class="skill-group-note">application development</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Spring / Spring Boot" tabindex="0"><img src="https://skillicons.dev/icons?i=spring" alt="Spring" /></span>
+                        <span class="tech-logo" data-label="React" tabindex="0"><img src="https://skillicons.dev/icons?i=react" alt="React" /></span>
+                        <span class="tech-logo" data-label="Node.js" tabindex="0"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" /></span>
+                        <span class="tech-logo" data-label="Flask" tabindex="0"><img src="https://skillicons.dev/icons?i=flask" alt="Flask" /></span>
+                        <span class="tech-logo" data-label="TensorFlow" tabindex="0"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" /></span>
+                        <span class="tech-logo wordmark" data-label="JavaFX" tabindex="0">JavaFX</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Databases</h3><span class="skill-group-note">relational + document databases</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="MySQL" tabindex="0"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /></span>
+                        <span class="tech-logo" data-label="MongoDB" tabindex="0"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /></span>
+                        <span class="tech-logo" data-label="SQLite" tabindex="0"><img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" /></span>
+                        <span class="tech-logo wordmark" data-label="SQL" tabindex="0">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Cloud & Deployment</h3><span class="skill-group-note">hosting + managed services</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Cloudinary" tabindex="0"><img src="https://cdn.simpleicons.org/cloudinary/3448C5" alt="Cloudinary" /></span>
+                        <span class="tech-logo" data-label="Aiven" tabindex="0"><img src="https://cdn.simpleicons.org/aiven/FF3554" alt="Aiven" /></span>
+                        <span class="tech-logo" data-label="Render" tabindex="0"><img src="https://cdn.simpleicons.org/render/46E3B7" alt="Render" /></span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Development Tools & IDEs</h3><span class="skill-group-note">day-to-day workflow</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Visual Studio Code" tabindex="0"><img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code" /></span>
+                        <span class="tech-logo" data-label="IntelliJ IDEA" tabindex="0"><img src="https://skillicons.dev/icons?i=idea" alt="IntelliJ IDEA" /></span>
+                        <span class="tech-logo" data-label="Git" tabindex="0"><img src="https://skillicons.dev/icons?i=git" alt="Git" /></span>
+                        <span class="tech-logo" data-label="GitHub" tabindex="0"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></span>
+                        <span class="tech-logo" data-label="Docker" tabindex="0"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /></span>
+                        <span class="tech-logo" data-label="Apache NetBeans" tabindex="0"><img src="https://cdn.simpleicons.org/apachenetbeanside/1B6AC6" alt="Apache NetBeans" /></span>
+                        <span class="tech-logo" data-label="XAMPP" tabindex="0"><img src="https://cdn.simpleicons.org/xampp/FB7A24" alt="XAMPP" /></span>
+                        <span class="tech-logo wordmark" data-label="MinGW-w64" tabindex="0">MinGW</span>
+                        <span class="tech-logo wordmark" data-label="JavaFX Scene Builder" tabindex="0">Scene</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Operating Systems & Virtualization</h3><span class="skill-group-note">desktop + Linux environments</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Windows" tabindex="0"><img src="https://skillicons.dev/icons?i=windows" alt="Windows" /></span>
+                        <span class="tech-logo" data-label="Linux" tabindex="0"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /></span>
+                        <span class="tech-logo" data-label="Ubuntu" tabindex="0"><img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu" /></span>
+                        <span class="tech-logo" data-label="Kali Linux" tabindex="0"><img src="https://skillicons.dev/icons?i=kali" alt="Kali Linux" /></span>
+                        <span class="tech-logo" data-label="VirtualBox" tabindex="0"><img src="https://cdn.simpleicons.org/virtualbox/2F61B4" alt="VirtualBox" /></span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-head"><h3>Networking, Security & Embedded</h3><span class="skill-group-note">systems + infrastructure</span></div>
+                    <div class="logo-grid">
+                        <span class="tech-logo" data-label="Cisco IOS CLI / Packet Tracer" tabindex="0"><img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="Cisco" /></span>
+                        <span class="tech-logo" data-label="Wireshark" tabindex="0"><img src="https://cdn.simpleicons.org/wireshark/1679A7" alt="Wireshark" /></span>
+                        <span class="tech-logo" data-label="Kali Linux" tabindex="0"><img src="https://skillicons.dev/icons?i=kali" alt="Kali Linux" /></span>
+                        <span class="tech-logo" data-label="Embedded Systems" tabindex="0"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+                        <span class="tech-logo wordmark" data-label="Assembly / Low-level Programming" tabindex="0">ASM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="research">
+        <div class="container">
+            <div class="section-kicker">04 · Research</div>
+            <h2 class="section-title">Engineering curiosity with a <span class="accent">research mindset.</span></h2>
+            <p class="section-intro">My research interests connect computing with real-world problems, from climate risks to future connectivity and intelligent systems.</p>
+
+            <div class="research-grid">
+                <article class="card publication-card reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge">Published Research</span>
+                        <span class="pub-badge">Asia Pacific Journal of Energy and Environment</span>
+                    </div>
+                    <h3>Heat Waves in Bangladesh: Understanding the Threats and Finding Solutions</h3>
+                    <p><strong>Mehedi Hasan Siddique</strong>, Dr. Md. Shelim Miah, Safayet Ullah</p>
+                    <p style="margin-top: 12px;">Research focused on heatwave threats in Bangladesh and practical approaches to understanding and mitigating their impact.</p>
+                    <div class="pub-actions">
+                        <a class="btn btn-primary" href="https://doi.org/10.18034/apjee.v9i2.765" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open" aria-hidden="true"></i> View DOI</a>
+                        <a class="btn" href="https://scholar.google.com/citations?user=8WcSaLIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+                        <a class="btn" href="https://orcid.org/0009-0000-7124-7041" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a>
+                    </div>
+                </article>
+
+                <aside class="card research-side reveal">
+                    <h3>Current research interests</h3>
+                    <div class="research-list">
+                        <div class="research-item"><strong>6G Communication</strong><span>Implementation challenges, infrastructure and future connectivity.</span></div>
+                        <div class="research-item"><strong>Artificial Intelligence</strong><span>Applied intelligent systems and practical AI projects.</span></div>
+                        <div class="research-item"><strong>Machine Learning</strong><span>Learning models, data analysis and experimentation.</span></div>
+                        <div class="research-item"><strong>Networking & Security</strong><span>Modern networking, infrastructure and system security.</span></div>
+                        <div class="research-item"><strong>Software Engineering</strong><span>Building maintainable systems that solve real problems.</span></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="journey">
+        <div class="container">
+            <div class="section-kicker">05 · Journey</div>
+            <h2 class="section-title">Education, learning and <span class="accent">credentials.</span></h2>
+
+            <div class="journey-grid">
+                <article class="card journey-card reveal">
+                    <h3>Education & development</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <small>2023 — Present</small>
+                            <strong>B.Sc. in Computer Science & Engineering</strong>
+                            <p>Southeast University · Dhaka, Bangladesh</p>
+                        </div>
+                        <div class="timeline-item">
+                            <small>Current focus</small>
+                            <strong>Java, Spring Boot & software engineering</strong>
+                            <p>Strengthening backend development, architecture, databases and deployment through projects.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <small>Continuing</small>
+                            <strong>AI/ML, cloud, networking & embedded systems</strong>
+                            <p>Expanding across machine learning, cloud technologies, Cisco networking and low-level systems.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card journey-card reveal">
+                    <h3>Certificates & technical learning</h3>
+                    <div class="credential-list">
+                        <div class="credential"><div class="credential-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div><div><strong>Applied Penetration Testing Engineer</strong><span>EDGE-CSE, CUET · Bangladesh Computer Council · 2026</span></div></div>
+                        <div class="credential"><div class="credential-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div><div><strong>C)PTE — Certified Penetration Testing Engineer</strong><span>Mile2 Cybersecurity · 2026–2029</span></div></div>
+                        <div class="credential"><div class="credential-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div><div><strong>AI CodeLab Program 2026</strong><span>IEEE Computer Society SEU SBC × Learn With Sumit</span></div></div>
+                        <div class="credential"><div class="credential-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><div><strong>Applied Penetration Testing — Hands-on</strong><span>Digital Skills 4 Students · EDGE, CUET · 2026</span></div></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="card contact-panel reveal">
+                <div class="contact-grid">
+                    <div>
+                        <div class="section-kicker">06 · Contact</div>
+                        <h2>Have an idea, opportunity or research question?</h2>
+                        <p>The simplest way to reach me is by email. You can also find my projects, research profiles and professional updates through the links here.</p>
+                        <div class="contact-actions">
+                            <a class="btn btn-primary" href="mailto:hasanmehidi2016@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Send an email</a>
+                            <button class="btn" id="copyEmail" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy email</button>
+                        </div>
+                        <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+                    </div>
+
+                    <div class="social-stack" aria-label="Professional links">
+                        <a href="https://github.com/Darkraider888" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/mehedi-hasan-siddique-0a19643a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://orcid.org/0009-0000-7124-7041" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+                        <a href="https://scholar.google.com/citations?user=8WcSaLIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
+                        <a href="https://x.com/Mehedi_Hasan_24" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/daydreamer_ui/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <span>© <span id="year">2026</span> Mehedi Hasan Siddique.</span>
+        <span class="mono">@Darkraider888 · Build → learn → improve.</span>
+    </div>
+</footer>
+
+<button class="icon-btn back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
