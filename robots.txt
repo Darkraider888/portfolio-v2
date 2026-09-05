@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://demo-portfolio-ecru.vercel.app/sitemap.xml

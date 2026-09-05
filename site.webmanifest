@@ -1,0 +1,10 @@
+{
+  "name": "Mehedi Hasan Siddique — Portfolio",
+  "short_name": "Mehedi Hasan",
+  "description": "Professional portfolio of Mehedi Hasan Siddique, CSE undergraduate and software developer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090d",
+  "theme_color": "#07090d",
+  "icons": []
+}
