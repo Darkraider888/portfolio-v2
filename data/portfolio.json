@@ -1,0 +1,552 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "siteUrl": "https://portfolio-v2-gules-two-71.vercel.app/",
+    "title": "Mehedi Hasan Siddique | CSE Undergraduate & Software Developer",
+    "description": "Portfolio of Mehedi Hasan Siddique: Java, Spring Boot, software development, AI/ML, networking and systems.",
+    "image": "assets/images/profile.webp",
+    "favicon": "assets/images/favicon.svg",
+    "resume": "assets/files/Mehedi_Hasan_Siddique_CV.pdf"
+  },
+  "profile": {
+    "name": "Mehedi Hasan Siddique",
+    "username": "Darkraider888",
+    "position": "Computer Science & Engineering Undergraduate",
+    "university": "Southeast University",
+    "location": "Dhaka, Bangladesh",
+    "availability": "Interested in internships, research & collaboration",
+    "headline": "Building software across",
+    "headlineAccent": "Java, AI & systems.",
+    "heroBio": "I'm Mehedi Hasan Siddique, a Computer Science & Engineering undergraduate at Southeast University. I learn by building practical software, exploring intelligent systems, and understanding how networks and computers work underneath the interface.",
+    "specialties": [
+      "Software development",
+      "AI/ML",
+      "networking",
+      "embedded systems"
+    ],
+    "profileImage": "assets/images/profile.webp"
+  },
+  "about": {
+    "headline": "I learn technology by building with it.",
+    "intro": "My interests span software engineering, AI/ML, networking, cybersecurity and low-level systems. I prefer turning coursework and curiosity into working projects instead of only collecting technologies on a resume.",
+    "paragraphs": [
+      "My strongest direction is software development with Java, alongside Python and C. I have worked with Spring Boot, JavaFX, databases, web technologies, cloud deployment tools, and development environments across Windows and Linux.",
+      "I also study Cisco networking, embedded and assembly concepts, cybersecurity tooling, and research topics such as AI/ML and next-generation communication systems."
+    ],
+    "quote": "Learn deeply. Build useful things. Understand why they work.",
+    "focusAreas": [
+      {
+        "title": "Java & Spring Boot",
+        "description": "Backend architecture, security, data access and full-stack application development.",
+        "icon": "fa-brands fa-java"
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "Learning intelligent systems through experiments, coursework and application projects.",
+        "icon": "fa-solid fa-brain"
+      },
+      {
+        "title": "Networking & Systems",
+        "description": "Cisco IOS CLI, Packet Tracer, Linux, embedded systems and low-level computing.",
+        "icon": "fa-solid fa-network-wired"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "waylo",
+      "title": "Waylo",
+      "description": "A university travel and community platform featuring trip discovery, organizer workflows, reservations, SSLCommerz sandbox checkout, private trip groups, and secure account recovery.",
+      "technologies": [
+        "Java 25",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "Thymeleaf",
+        "Docker",
+        "Render",
+        "Cloudinary",
+        "SSLCommerz Sandbox",
+        "Brevo"
+      ],
+      "icon": "fa-solid fa-plane-departure",
+      "repositoryUrl": "https://github.com/Darkraider888/Waylo",
+      "liveUrl": "https://waylo-darkraider888.onrender.com/feed",
+      "featured": true,
+      "visible": true
+    },
+    {
+      "id": "campusvoice",
+      "title": "CampusVoice",
+      "description": "A university community platform for problems, suggestions and discussions, with student posts, image uploads, likes, comments, moderation and issue-status tracking.",
+      "technologies": [
+        "Java 25",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "Thymeleaf",
+        "Cloudinary",
+        "Docker",
+        "Render"
+      ],
+      "icon": "fa-solid fa-graduation-cap",
+      "repositoryUrl": "https://github.com/Darkraider888/CampusVoice",
+      "liveUrl": "https://campusvoice-2pvw.onrender.com",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "quicktalk",
+      "title": "QuickTalk",
+      "description": "Temporary room-based real-time chat using WebSocket and MongoDB, featuring reactions, replies, presence and 24-hour message expiry.",
+      "technologies": [
+        "Java 25",
+        "Spring Boot",
+        "WebSocket",
+        "MongoDB Atlas",
+        "JavaScript",
+        "Render"
+      ],
+      "icon": "fa-solid fa-comments",
+      "repositoryUrl": "https://github.com/Darkraider888/QuickTalk",
+      "liveUrl": "https://quicktalk-1adv.onrender.com/",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "desktop-pet",
+      "title": "Desktop Pet",
+      "description": "Animated Windows desktop companions built with C# and WPF, including interactions, distinct character behaviors, settings persistence, and a portable preview release.",
+      "technologies": [
+        "C#",
+        "WPF",
+        ".NET",
+        "Windows"
+      ],
+      "icon": "fa-solid fa-paw",
+      "repositoryUrl": "https://github.com/Darkraider888/DesktopPet-WPF",
+      "liveUrl": null,
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "tasktrack",
+      "title": "TaskTrack",
+      "description": "Task management application and student Java project board with CRUD, status and priority filtering, MongoDB Atlas integration, and Docker deployment.",
+      "technologies": [
+        "Java 25",
+        "Spring Boot",
+        "MongoDB Atlas",
+        "Thymeleaf",
+        "Bootstrap",
+        "Docker",
+        "Render"
+      ],
+      "icon": "fa-solid fa-list-check",
+      "repositoryUrl": "https://github.com/Darkraider888/tasktrack",
+      "liveUrl": "https://tasktrack-r7u7.onrender.com/",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "portfolio-v2",
+      "title": "Portfolio V2",
+      "description": "My responsive developer and research portfolio, with dark/light themes, featured work, technical skills, education, and research links.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vercel"
+      ],
+      "icon": "fa-solid fa-id-card",
+      "repositoryUrl": "https://github.com/Darkraider888/portfolio-v2",
+      "liveUrl": "https://portfolio-v2-gules-two-71.vercel.app/",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "orivo",
+      "title": "ORIVO Emotion Detector",
+      "description": "React and TypeScript frontend for an emotion-detection API, with text analysis, registration and emotion history management.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "API"
+      ],
+      "icon": "fa-solid fa-face-smile",
+      "repositoryUrl": "https://github.com/Darkraider888/Orivo-Emotion-Dectector",
+      "liveUrl": "https://orivo-emotion-detector.netlify.app/",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "des",
+      "title": "DES Implementation",
+      "description": "Educational C implementation of the Data Encryption Standard for studying the internal stages of a classic block cipher.",
+      "technologies": [
+        "C",
+        "Cryptography",
+        "Security"
+      ],
+      "icon": "fa-solid fa-shield-halved",
+      "repositoryUrl": "https://github.com/Darkraider888/DES-implemenation-code",
+      "liveUrl": null,
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "catch-dodge",
+      "title": "Catch & Dodge",
+      "description": "Browser arcade game built with vanilla JavaScript and HTML5 Canvas: collect coins, avoid bombs and survive.",
+      "technologies": [
+        "JavaScript",
+        "HTML5 Canvas",
+        "CSS"
+      ],
+      "icon": "fa-solid fa-gamepad",
+      "repositoryUrl": "https://github.com/Darkraider888/Catch-Dodge",
+      "liveUrl": "https://darkraider888.github.io/Catch-Dodge/",
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "assembly",
+      "title": "8086 Assembly Labs",
+      "description": "Assembly laboratory exercises covering registers, instructions, memory operations and low-level programming.",
+      "technologies": [
+        "8086 Assembly",
+        "Low-level Programming"
+      ],
+      "icon": "fa-solid fa-microchip",
+      "repositoryUrl": "https://github.com/Darkraider888/Assembly-Language",
+      "liveUrl": null,
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "data-structures",
+      "title": "Data Structures",
+      "description": "Practice implementations of structures and algorithms, including trees, graphs, stacks, queues and searching.",
+      "technologies": [
+        "C",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "icon": "fa-solid fa-diagram-project",
+      "repositoryUrl": "https://github.com/Darkraider888/data-structure-",
+      "liveUrl": null,
+      "featured": false,
+      "visible": true
+    },
+    {
+      "id": "java-practice",
+      "title": "Java Practice",
+      "description": "University exercises and Java programming practice covering OOP, problem solving and fundamentals.",
+      "technologies": [
+        "Java",
+        "OOP",
+        "Problem Solving"
+      ],
+      "icon": "fa-brands fa-java",
+      "repositoryUrl": "https://github.com/Darkraider888/JavaPractice",
+      "liveUrl": null,
+      "featured": false,
+      "visible": true
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & Web",
+      "note": "core programming + frontend",
+      "items": [
+        {
+          "name": "Java",
+          "iconUrl": "https://skillicons.dev/icons?i=java"
+        },
+        {
+          "name": "Python",
+          "iconUrl": "https://skillicons.dev/icons?i=python"
+        },
+        {
+          "name": "C",
+          "iconUrl": "https://skillicons.dev/icons?i=c"
+        },
+        {
+          "name": "C++",
+          "iconUrl": "https://skillicons.dev/icons?i=cpp"
+        },
+        {
+          "name": "JavaScript",
+          "iconUrl": "https://skillicons.dev/icons?i=js"
+        },
+        {
+          "name": "HTML5",
+          "iconUrl": "https://skillicons.dev/icons?i=html"
+        },
+        {
+          "name": "CSS3",
+          "iconUrl": "https://skillicons.dev/icons?i=css"
+        },
+        {
+          "name": "PHP",
+          "iconUrl": "https://skillicons.dev/icons?i=php"
+        },
+        {
+          "name": "Assembly Language",
+          "iconUrl": null
+        }
+      ]
+    },
+    {
+      "category": "Frameworks & Development",
+      "note": "application development",
+      "items": [
+        {
+          "name": "Spring / Spring Boot",
+          "iconUrl": "https://skillicons.dev/icons?i=spring"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://skillicons.dev/icons?i=react"
+        },
+        {
+          "name": "Node.js",
+          "iconUrl": "https://skillicons.dev/icons?i=nodejs"
+        },
+        {
+          "name": "Flask",
+          "iconUrl": "https://skillicons.dev/icons?i=flask"
+        },
+        {
+          "name": "TensorFlow",
+          "iconUrl": "https://skillicons.dev/icons?i=tensorflow"
+        },
+        {
+          "name": "JavaFX",
+          "iconUrl": null
+        }
+      ]
+    },
+    {
+      "category": "Databases",
+      "note": "relational + document databases",
+      "items": [
+        {
+          "name": "MySQL",
+          "iconUrl": "https://skillicons.dev/icons?i=mysql"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://skillicons.dev/icons?i=mongodb"
+        },
+        {
+          "name": "SQLite",
+          "iconUrl": "https://skillicons.dev/icons?i=sqlite"
+        },
+        {
+          "name": "SQL",
+          "iconUrl": null
+        }
+      ]
+    },
+    {
+      "category": "Cloud & Deployment",
+      "note": "hosting + managed services",
+      "items": [
+        {
+          "name": "Cloudinary",
+          "iconUrl": "https://cdn.simpleicons.org/cloudinary/3448C5"
+        },
+        {
+          "name": "Aiven",
+          "iconUrl": "https://cdn.simpleicons.org/aiven/FF3554"
+        },
+        {
+          "name": "Render",
+          "iconUrl": "https://cdn.simpleicons.org/render/46E3B7"
+        },
+        {
+          "name": "Vercel",
+          "iconUrl": "https://skillicons.dev/icons?i=vercel"
+        }
+      ]
+    },
+    {
+      "category": "Development Tools & IDEs",
+      "note": "day-to-day workflow",
+      "items": [
+        {
+          "name": "Visual Studio Code",
+          "iconUrl": "https://skillicons.dev/icons?i=vscode"
+        },
+        {
+          "name": "IntelliJ IDEA",
+          "iconUrl": "https://skillicons.dev/icons?i=idea"
+        },
+        {
+          "name": "Git",
+          "iconUrl": "https://skillicons.dev/icons?i=git"
+        },
+        {
+          "name": "GitHub",
+          "iconUrl": "https://skillicons.dev/icons?i=github"
+        },
+        {
+          "name": "Docker",
+          "iconUrl": "https://skillicons.dev/icons?i=docker"
+        },
+        {
+          "name": "Apache NetBeans",
+          "iconUrl": "https://cdn.simpleicons.org/apachenetbeanside/1B6AC6"
+        },
+        {
+          "name": "XAMPP",
+          "iconUrl": "https://cdn.simpleicons.org/xampp/FB7A24"
+        },
+        {
+          "name": "MinGW-w64",
+          "iconUrl": null
+        },
+        {
+          "name": "JavaFX Scene Builder",
+          "iconUrl": null
+        }
+      ]
+    },
+    {
+      "category": "Operating Systems & Virtualization",
+      "note": "desktop + Linux environments",
+      "items": [
+        {
+          "name": "Windows",
+          "iconUrl": "https://skillicons.dev/icons?i=windows"
+        },
+        {
+          "name": "Linux",
+          "iconUrl": "https://skillicons.dev/icons?i=linux"
+        },
+        {
+          "name": "Ubuntu",
+          "iconUrl": "https://skillicons.dev/icons?i=ubuntu"
+        },
+        {
+          "name": "Kali Linux",
+          "iconUrl": "https://skillicons.dev/icons?i=kali"
+        },
+        {
+          "name": "Oracle VirtualBox",
+          "iconUrl": "https://cdn.simpleicons.org/virtualbox/2F61B4"
+        }
+      ]
+    },
+    {
+      "category": "Networking, Security & Embedded",
+      "note": "systems + infrastructure",
+      "items": [
+        {
+          "name": "Cisco IOS / Packet Tracer",
+          "iconUrl": "https://cdn.simpleicons.org/cisco/1BA0D7"
+        },
+        {
+          "name": "Wireshark",
+          "iconUrl": "https://cdn.simpleicons.org/wireshark/1679A7"
+        },
+        {
+          "name": "Kali Linux",
+          "iconUrl": "https://skillicons.dev/icons?i=kali"
+        },
+        {
+          "name": "Embedded Systems",
+          "iconUrl": null
+        },
+        {
+          "name": "Assembly / Low-level Programming",
+          "iconUrl": null
+        }
+      ]
+    }
+  ],
+  "research": {
+    "intro": "My research interests connect computing with real-world problems, from climate risks to future connectivity and intelligent systems.",
+    "publications": [
+      {
+        "title": "Heat Waves in Bangladesh: Understanding the Threats and Finding Solutions",
+        "authors": [
+          "Mehedi Hasan Siddique",
+          "Dr. Md. Shelim Miah",
+          "Safayet Ullah"
+        ],
+        "journal": "Asia Pacific Journal of Energy and Environment",
+        "description": "Research focused on heatwave threats in Bangladesh and practical approaches to understanding and mitigating their impact.",
+        "doiUrl": "https://doi.org/10.18034/apjee.v9i2.765"
+      }
+    ],
+    "interests": [
+      {
+        "title": "6G Communication",
+        "description": "Implementation challenges, infrastructure and future connectivity."
+      },
+      {
+        "title": "Artificial Intelligence",
+        "description": "Applied intelligent systems and practical AI projects."
+      },
+      {
+        "title": "Machine Learning",
+        "description": "Learning models, data analysis and experimentation."
+      },
+      {
+        "title": "Networking & Security",
+        "description": "Modern networking, infrastructure and system security."
+      },
+      {
+        "title": "Software Engineering",
+        "description": "Building maintainable systems that solve real problems."
+      }
+    ]
+  },
+  "education": [
+    {
+      "period": "2023 - Present",
+      "title": "B.Sc. in Computer Science & Engineering",
+      "institution": "Southeast University",
+      "location": "Dhaka, Bangladesh"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Applied Penetration Testing Engineer",
+      "issuer": "EDGE-CSE, CUET / Bangladesh Computer Council",
+      "period": "2026",
+      "link": null
+    },
+    {
+      "title": "C)PTE - Certified Penetration Testing Engineer",
+      "issuer": "Mile2 Cybersecurity",
+      "period": "2026-2029",
+      "link": null
+    },
+    {
+      "title": "AI CodeLab Program",
+      "issuer": "IEEE Computer Society SEU SBC x Learn With Sumit",
+      "period": "2026",
+      "link": null
+    },
+    {
+      "title": "Applied Penetration Testing - Hands-on",
+      "issuer": "Digital Skills 4 Students / EDGE, CUET",
+      "period": "2026",
+      "link": null
+    }
+  ],
+  "contact": {
+    "email": "hasanmehidi2016@gmail.com",
+    "github": "https://github.com/Darkraider888",
+    "linkedin": "https://www.linkedin.com/in/mehedi-hasan-siddique-0a19643a1/",
+    "orcid": "https://orcid.org/0009-0000-7124-7041",
+    "googleScholar": "https://scholar.google.com/citations?user=8WcSaLIAAAAJ&hl=en",
+    "x": "https://x.com/Mehedi_Hasan_24",
+    "instagram": "https://www.instagram.com/daydreamer_ui/"
+  }
+}
