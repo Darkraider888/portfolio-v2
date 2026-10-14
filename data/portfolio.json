@@ -255,26 +255,6 @@
       "liveUrl": null,
       "featured": false,
       "visible": true
-    },
-    {
-      "id": "new-project",
-      "title": "New project",
-      "description": "",
-      "technologies": [],
-      "icon": "fa-solid fa-code",
-      "repositoryUrl": "",
-      "liveUrl": "",
-      "downloadUrl": "",
-      "imageUrl": "assets/projects/new-project/cover-51edd02d-221d-42d3-b7ca-097eb38dca0c.png",
-      "featured": false,
-      "visible": true,
-      "downloads": [
-        {
-          "label": "Download",
-          "platform": "",
-          "url": "https://github.com/Darkraider888/portfolio-v2/tree/portfolio-admin"
-        }
-      ]
     }
   ],
   "skills": [
