@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Portfolio Admin · Darkraider888</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090A0B;
+      --surface: #111213;
+      --surface2: #191A1C;
+      --panel: #0D0E10;
+      --text: #F5F5F5;
+      --muted: #9D9FA4;
+      --line: #343538;
+      --accent: #E54B4F;
+      --accent2: #F0A14C;
+      --success: #4BC38A;
+      --warning: #F0A14C;
+      --soft: #251618;
+      --input: #0D0E10;
+      --shadow: none;
+    }
+    html[data-theme="light"] {
+      color-scheme: light;
+      --bg: #F6F6F5;
+      --surface: #FFFFFF;
+      --surface2: #F0F0EF;
+      --panel: #FAFAF9;
+      --text: #151516;
+      --muted: #616368;
+      --line: #D3D3D2;
+      --accent: #C8343D;
+      --accent2: #BA6B20;
+      --success: #168852;
+      --warning: #B36515;
+      --soft: #FFF1F1;
+      --input: #FFFFFF;
+      --shadow: none;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.48;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #ff7a18;outline-offset:3px}[hidden]{display:none!important}
+    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:var(--bg);backdrop-filter:blur(10px)}.topbar{max-width:1460px;margin:auto;padding:16px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{display:flex;gap:13px;align-items:center;text-decoration:none}.mark{display:grid;place-items:center;width:43px;height:43px;background:var(--accent);border-radius:13px;box-shadow:0 0 25px #e5091445;color:white;font-weight:900}.brand strong{display:block;letter-spacing:.02em;font-size:1.06rem}.brand strong span{color:#f34550}.brand small{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}
+    .topactions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.container{max-width:1460px;margin:0 auto;padding:27px 28px 60px}.notice{border:1px solid #9d6538;background:#362315;color:#ffe2bd;border-radius:14px;padding:12px 16px;font-size:.87rem;margin-bottom:22px}.notice strong{color:#fff3dd}.headline{display:flex;gap:14px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;margin:0 0 22px}.eyebrow{font-size:.68rem;letter-spacing:.19em;color:#f65a64;font-weight:800;text-transform:uppercase}h1{font-size:clamp(1.65rem,3vw,2.5rem);letter-spacing:-.04em;line-height:1.2;margin:7px 0}h2{font-size:1.18rem;line-height:1.25;margin:0}h3{font-size:1.05rem;line-height:1.3;margin:0}.subtle{color:var(--muted);font-size:.88rem}.lead{margin:4px 0 0;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:10px 13px;background:var(--surface2);color:var(--text);text-decoration:none;font-weight:700;white-space:nowrap;transition:transform .15s ease,border-color .15s ease}.btn:hover:enabled{transform:translateY(-1px);border-color:var(--accent)}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}.btn.minor{background:transparent}.btn.small{font-size:.8rem;padding:7px 10px}.btn.danger{color:#ff7880;border-color:#9d3b42}.btn:active{transform:translateY(0)}.pill{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;background:var(--soft);color:#ff7880;border:1px solid #b7283b66;border-radius:9px;font-weight:800}
+    .layout{display:grid;grid-template-columns:minmax(240px,285px) minmax(0,1fr);align-items:start;gap:20px}.panel{border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}.sidebar{position:sticky;top:93px}.sidehead{padding:19px 17px 13px}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.tab{background:var(--surface2);color:var(--muted);border:1px solid var(--line);border-radius:9px;padding:9px 5px;font-size:.79rem;font-weight:750}.tab[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}.sidecontrols{display:flex;gap:8px;margin-top:16px}.sidecontrols .btn{flex:1;min-width:0}.search{width:100%;margin-top:13px}
+    .list{max-height:min(70vh,780px);overflow:auto;border-top:1px solid var(--line);padding:9px}.item{width:100%;background:transparent;text-align:left;color:var(--text);border:1px solid transparent;border-radius:11px;padding:12px;display:flex;justify-content:space-between;align-items:center;gap:10px}.item:hover{background:var(--surface2)}.item.selected{border-color:var(--accent);background:var(--soft)}.item .itemname{font-weight:750;font-size:.9rem;display:block}.item small{display:block;color:var(--muted);font-size:.72rem;line-height:1.3}.item .mini{color:#fb6470;font-size:.66rem;text-transform:uppercase;letter-spacing:.05em}.item .number{color:var(--muted);font-size:.72rem}.empty{padding:16px;color:var(--muted)}
+    .editor{min-width:0}.sectionhead{padding:24px 25px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:start;gap:14px;flex-wrap:wrap}.sectionhead p{margin:7px 0 0}.fields{padding:24px 25px;display:grid;gap:20px}.fieldrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.field{min-width:0}.field label,.field .label{font-size:.78rem;font-weight:800;display:block;margin-bottom:7px}.field input:not([type="checkbox"]):not([type="file"]),.field textarea,.search{width:100%;border:1px solid var(--line);border-radius:10px;color:var(--text);background:var(--input);padding:11px 12px;outline:none}.field input:focus,.field textarea:focus,.search:focus{border-color:var(--accent)}.field textarea{min-height:90px;resize:vertical}.field input[readonly]{opacity:.75}.hint{font-size:.73rem;color:var(--muted);margin:6px 0 0}.togglebar{display:flex;gap:18px;flex-wrap:wrap}.togglebar label{display:flex;gap:9px;align-items:center;font-size:.88rem;font-weight:750}.togglebar input{accent-color:var(--accent);width:17px;height:17px}
+    .uploadbox{border:1px dashed #797e8c75;border-radius:13px;padding:16px;background:var(--panel)}.uploadbox input{max-width:100%;margin-top:8px;font-size:.83rem}.uploadbox h3{margin-bottom:5px}.uploadbox p{margin:4px 0;color:var(--muted);font-size:.75rem}.filepreview{margin-top:9px;font-size:.78rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}.thumb{border:1px solid var(--line);padding:5px;border-radius:9px;display:flex;gap:6px;align-items:center;background:var(--surface2);max-width:180px}.thumb img{width:44px;height:44px;border-radius:6px;object-fit:cover}.thumb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .preview{border-top:1px solid var(--line);padding:24px 25px;background:var(--panel)}.preview .eyebrow{margin-bottom:12px}.sample{padding:22px;border-radius:14px;border:1px solid var(--line);background:var(--surface);display:grid;grid-template-columns:minmax(130px,.55fr) minmax(0,1fr);gap:20px;align-items:center}.sampleimage{height:176px;background:linear-gradient(135deg,#310b13,#111822 70%);border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;color:#f76670;font-size:2.2rem;font-weight:900;overflow:hidden}.sampleimage img{width:100%;height:100%;object-fit:cover}.sample h3{font-size:1.35rem;margin:6px 0}.sample p{font-size:.85rem;color:var(--muted);margin:0}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}.chip{border-radius:7px;border:1px solid var(--line);padding:3px 7px;background:var(--surface2);font-size:.67rem}.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.links a{font-size:.75rem}.footerbar{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:13px 27px;display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap;z-index:10}.status{color:var(--muted);font-size:.79rem}.filebadge{display:block;font-size:.77rem;margin-top:10px;color:var(--muted)}.pageerror{padding:35px;background:#4a1b1b;color:#fff;border-radius:15px;margin-top:20px}
+    @media(max-width:1050px){.layout{grid-template-columns:minmax(210px,250px) minmax(0,1fr)}.sample{grid-template-columns:1fr}.sampleimage{height:145px}}
+    @media(max-width:760px){.container{padding:17px 13px 80px}.topbar{padding:13px}.topactions{gap:6px}.brand strong{font-size:.93rem}.layout{grid-template-columns:1fr}.sidebar{position:static}.list{max-height:220px}.fields,.preview,.sectionhead{padding:18px}.fieldrow{grid-template-columns:1fr}.sample{grid-template-columns:1fr}.footerbar{padding:11px 14px}.headline{align-items:start}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+    /* Neutral admin studio: black + white, signal colors only when meaningful. */
+    body { background:var(--bg); letter-spacing:-.005em; }
+    header { background:var(--bg); }
+    .mark {
+      color:var(--accent);
+      background:var(--soft);
+      border:1px solid color-mix(in srgb,var(--accent) 46%, var(--line));
+      box-shadow:none;
+      border-radius:11px;
+    }
+    .brand strong span { color:var(--accent); }
+    .brand small { letter-spacing:.09em; }
+    .topbar { padding-top:15px; padding-bottom:15px; }
+    .notice {
+      background:color-mix(in srgb,var(--warning) 7%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--warning) 28%,var(--line));
+      border-left:3px solid var(--warning);
+      color:var(--text);
+      box-shadow:none;
+      border-radius:10px;
+      padding:12px 15px;
+    }
+    .notice strong { color:var(--warning); }
+    .notice em { font-style:normal; }
+    .eyebrow { color:var(--muted); letter-spacing:.14em; }
+    h1 { font-weight:760; letter-spacing:-.045em; }
+    .headline > .pill {
+      color:var(--warning);
+      background:color-mix(in srgb,var(--warning) 8%,var(--surface));
+      border-color:color-mix(in srgb,var(--warning) 33%,var(--line));
+    }
+    .headline > .pill::before {
+      content:"";display:inline-block;width:7px;height:7px;margin-right:8px;
+      background:var(--warning);border-radius:50%;vertical-align:middle;
+    }
+    .pill {
+      color:var(--muted);
+      background:var(--surface2);
+      border:1px solid var(--line);
+      text-transform:none;
+      letter-spacing:.02em;
+      font-weight:650;
+    }
+    .panel { border-radius:14px; background:var(--surface); box-shadow:none; }
+    .btn {
+      background:var(--surface2);
+      color:var(--text);
+      border:1px solid var(--line);
+      border-radius:9px;
+      font-weight:650;
+      box-shadow:none;
+    }
+    .btn:hover:enabled { border-color:var(--muted); transform:none; background:var(--panel); }
+    .btn.primary { background:var(--success); border-color:var(--success); color:#07120D; }
+    .btn.primary:hover:enabled { background:color-mix(in srgb,var(--success) 82%,white); border-color:var(--success); }
+    .btn.danger { color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,var(--line)); }
+    .btn.danger:hover:enabled { background:var(--soft);border-color:var(--accent); }
+    .btn.minor { color:var(--muted); }
+    .sidecontrols .btn.primary { background:transparent; border-color:color-mix(in srgb,var(--success) 42%,var(--line)); color:var(--success); }
+    .sidecontrols .btn.primary:hover:enabled { background:color-mix(in srgb,var(--success) 8%,var(--surface)); }
+    .tab { background:transparent; color:var(--muted); font-weight:650; border-radius:8px; }
+    .tab:hover { color:var(--text);background:var(--surface2); }
+    .tab[aria-selected="true"] {
+      color:var(--text);
+      border-color:color-mix(in srgb,var(--accent) 46%,var(--line));
+      background:var(--surface2);
+      box-shadow:inset 0 -2px 0 var(--accent);
+    }
+    .item { border-radius:9px; }
+    .item.selected { background:var(--surface2); border-color:color-mix(in srgb,var(--accent) 45%,var(--line)); }
+    .item .mini { color:var(--warning); }
+    .sectionhead { background:var(--surface); }
+    .fields { gap:19px; }
+    .field label,.field .label { color:var(--text); font-size:.81rem; font-weight:680; }
+    .field input:not([type="checkbox"]):not([type="file"]),.field textarea,.search {
+      background:var(--input);
+      color:var(--text);
+      border:1px solid var(--line);
+      border-radius:10px;
+      padding:12px 13px;
+    }
+    .field input::placeholder,.field textarea::placeholder,.search::placeholder { color:var(--muted);opacity:.8; }
+    .field input:focus,.field textarea:focus,.search:focus {
+      border-color:var(--accent);
+      outline:2px solid color-mix(in srgb,var(--accent) 14%,transparent);
+      outline-offset:0;
+    }
+    .togglebar label { font-weight:600; }
+    .togglebar input { accent-color:var(--success); }
+    .uploadbox { background:var(--panel); border:1px dashed var(--line); border-radius:12px; }
+    .uploadbox:hover { border-color:var(--muted); }
+    .preview { background:var(--panel); }
+    .preview .eyebrow { color:var(--muted); }
+    .sample { background:var(--surface); border-radius:12px; }
+    .sampleimage {
+      background:var(--surface2);
+      border:1px solid var(--line);
+      color:var(--accent);
+      border-radius:10px;
+    }
+    .chip { background:var(--surface2); border:1px solid var(--line); color:var(--muted); }
+    .status { display:flex;align-items:center;gap:9px; }
+    .status::before { content:"";display:inline-block;flex:0 0 7px;height:7px;background:var(--muted);border-radius:50%; }
+    .status[data-level="success"] { color:var(--success); }
+    .status[data-level="success"]::before { background:var(--success); }
+    .status[data-level="warning"] { color:var(--warning); }
+    .status[data-level="warning"]::before { background:var(--warning); }
+    .status[data-level="error"] { color:var(--accent); }
+    .status[data-level="error"]::before { background:var(--accent); }
+    .pageerror { background:var(--soft);border:1px solid var(--accent); color:var(--text); }
+    .footerbar { background:var(--bg); }
+    @media(max-width:760px){
+      .brand strong { font-size:.9rem; }
+      .status { width:100%; }
+      .footerbar {gap:8px; }
+      .footerbar .topactions { width:100%; }
+      .footerbar .btn { flex:1;white-space:normal; }
+    }
+      .auth-shell {max-width:540px;margin:clamp(24px,7vh,88px) auto;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:clamp(22px,4vw,38px)}
+    .auth-shell h1 {font-size:1.65rem;margin:10px 0}
+    .auth-shell .field {margin:22px 0 16px}
+    .auth-shell .field input {width:100%;border:1px solid var(--line);border-radius:10px;background:var(--input);color:var(--text);padding:12px 14px}
+    .auth-shell .field input:focus {border-color:var(--accent)}
+    .auth-check {display:flex;align-items:center;gap:8px;font-size:.84rem;color:var(--muted);margin-bottom:20px}
+    .auth-check input {accent-color:var(--accent)}
+    .auth-msg {font-size:.85rem;color:var(--muted);min-height:24px;margin:12px 0}
+    .auth-msg[data-kind="error"] {color:var(--accent)}
+    .auth-shell .btn {width:100%}
+    .auth-footer {border-top:1px solid var(--line);padding-top:16px;margin-top:20px;color:var(--muted);font-size:.78rem}
+</style>
+</head>
+<body>
+<header><div class="topbar">
+  <a class="brand" href="./index.html" aria-label="Back to portfolio"><span class="mark">DR</span><span><strong>DARKRAIDER <span>STUDIO</span></strong><small>Portfolio V2 / Content editor</small></span></a>
+  <div class="topactions"><button id="adminLogout" class="btn small minor" type="button" hidden>Sign out</button><button id="themeToggle" class="btn small minor" type="button">Switch theme</button><a class="btn small" href="./index.html">View portfolio ↗</a></div>
+</div></header>
+<div class="container">
+  <section id="authGate" class="auth-shell" aria-labelledby="authHeading">
+    <div class="eyebrow">DARKRAIDER STUDIO / PRIVATE ACCESS</div>
+    <h1 id="authHeading">Admin sign in</h1>
+    <p class="subtle">Enter the private code you saved in Vercel. It is verified by a server function and is never included in this page's source.</p>
+    <form id="adminLoginForm" hidden>
+      <div class="field"><label for="adminPassword">Admin code</label><input id="adminPassword" type="password" required autocomplete="current-password" maxlength="512" placeholder="Enter your private code"></div>
+      <label class="auth-check"><input id="showAdminPassword" type="checkbox"> Show code</label>
+      <button id="adminLoginButton" class="btn primary" type="submit">Sign in securely →</button>
+    </form>
+    <p id="authMessage" class="auth-msg" role="status" aria-live="polite">Checking your session...</p>
+    <p class="auth-footer">Session expires after 2 hours. Changes remain local drafts until GitHub publishing is added. Do not share your code.</p>
+  </section>
+  <div class="notice" id="adminNotice" hidden role="note"><strong>Authenticated preview.</strong> Changes still save to this browser only. GitHub publishing and real uploads are not enabled yet. Do not paste secrets into content fields.</div>
+  <div class="headline" id="adminIntro" hidden><div><div class="eyebrow">Step 4C / Content management</div><h1>Your portfolio, your control.</h1><p class="lead">Edit projects, certificates and profile details. Preview before publishing.</p></div><span class="pill">Local draft • not published</span></div>
+  <div id="loadError" class="pageerror" hidden role="alert"></div>
+  <div id="app" class="layout" hidden>
+    <aside class="sidebar panel" aria-label="Content navigation">
+      <div class="sidehead">
+        <div class="tabs" role="tablist" aria-label="Content areas">
+          <button class="tab" type="button" data-tab="projects" role="tab" aria-selected="true">Projects</button>
+          <button class="tab" type="button" data-tab="certificates" role="tab" aria-selected="false">Certificates</button>
+          <button class="tab" type="button" data-tab="profile" role="tab" aria-selected="false">Profile</button>
+        </div>
+        <input id="search" class="search" type="search" aria-label="Search projects or certificates" placeholder="Search projects…">
+        <div class="sidecontrols"><button id="addBtn" class="btn primary small" type="button">+ Add project</button></div>
+      </div>
+      <div id="recordList" class="list" aria-label="Items to edit"></div>
+    </aside>
+    <main class="editor panel">
+      <div id="projectsPane" role="tabpanel">
+        <div class="sectionhead"><div><div class="eyebrow">Project manager</div><h2>Edit a project</h2><p class="subtle">Cards, links, downloads, visibility and images.</p></div><div class="topactions"><button id="moveUp" class="btn small" type="button" aria-label="Move project up">↑ Move</button><button id="moveDown" class="btn small" type="button" aria-label="Move project down">↓ Move</button><button id="deleteProject" class="btn small danger" type="button">Delete</button></div></div>
+        <form id="projectForm" class="fields" autocomplete="off">
+          <div class="fieldrow"><div class="field"><label for="pTitle">Project title</label><input id="pTitle" maxlength="150" required></div><div class="field"><label for="pId">Project ID (read only)</label><input id="pId" readonly></div></div>
+          <div class="field"><label for="pDescription">Description</label><textarea id="pDescription" maxlength="3000" rows="3"></textarea></div>
+          <div class="field"><label for="pTechnologies">Technologies</label><textarea id="pTechnologies" rows="2" placeholder="Java 25, Spring Boot, MySQL"></textarea><p class="hint">Separate technologies with commas.</p></div>
+          <div class="fieldrow"><div class="field"><label for="pRepo">GitHub repository URL</label><input id="pRepo" type="url" placeholder="https://github.com/…"></div><div class="field"><label for="pLive">Live demo URL</label><input id="pLive" type="url" placeholder="https://…"></div></div>
+          <div class="fieldrow"><div class="field"><label for="pDownload">Download URL (optional)</label><input id="pDownload" type="url" placeholder="GitHub Releases / ZIP / installer"></div><div class="field"><label for="pIcon">Font Awesome icon class</label><input id="pIcon" placeholder="fa-solid fa-plane-departure"></div></div>
+          <div class="field"><label for="pImage">Existing image URL or asset path</label><input id="pImage" placeholder="assets/projects/waylo-cover.webp"><p class="hint">Images selected below are previews only. File publishing comes with the secure backend.</p></div>
+          <div class="togglebar"><label><input id="pFeatured" type="checkbox"> Featured project</label><label><input id="pVisible" type="checkbox"> Visible on portfolio</label></div>
+          <div class="fieldrow">
+            <div class="uploadbox"><h3>Project cover image</h3><p>JPG, PNG, WebP • maximum 5 MB</p><input type="file" id="pCoverFile" accept="image/jpeg,image/png,image/webp" aria-label="Choose cover image"><div id="coverFileInfo" class="filepreview" aria-live="polite"></div></div>
+            <div class="uploadbox"><h3>Project screenshots</h3><p>Select up to 5 images • preview only</p><input type="file" id="pScreenshotFiles" accept="image/jpeg,image/png,image/webp" multiple aria-label="Choose screenshots"><div id="screenshotFileInfo" class="filepreview" aria-live="polite"></div></div>
+          </div>
+        </form>
+        <div class="preview"><div class="eyebrow">Instant project preview</div><div class="sample"><div class="sampleimage" id="projectPreviewImage"><span>DR</span></div><div><span id="previewFlag" class="pill">Featured</span><h3 id="previewTitle"></h3><p id="previewDescription"></p><div id="previewChips" class="chips"></div><div id="previewLinks" class="links"></div></div></div></div>
+      </div>
+      <div id="certificatesPane" role="tabpanel" hidden>
+        <div class="sectionhead"><div><div class="eyebrow">Certificate manager</div><h2>Edit a certificate</h2><p class="subtle">Credentials, verification links and document previews.</p></div><button id="deleteCert" class="btn small danger" type="button">Delete</button></div>
+        <form id="certificateForm" class="fields" autocomplete="off">
+          <div class="field"><label for="cTitle">Certificate name</label><input id="cTitle" maxlength="200" required></div>
+          <div class="field"><label for="cIssuer">Issuing organization</label><input id="cIssuer" maxlength="250"></div>
+          <div class="fieldrow"><div class="field"><label for="cPeriod">Displayed period</label><input id="cPeriod" placeholder="2026 – 2029"></div><div class="field"><label for="cCredential">Credential ID (optional)</label><input id="cCredential"></div></div>
+          <div class="fieldrow"><div class="field"><label for="cIssueDate">Issue date (optional)</label><input id="cIssueDate" placeholder="2026-04"></div><div class="field"><label for="cExpiryDate">Expiry date (optional)</label><input id="cExpiryDate" placeholder="2029-04"></div></div>
+          <div class="field"><label for="cDescription">Description</label><textarea id="cDescription" rows="3"></textarea></div>
+          <div class="fieldrow"><div class="field"><label for="cVerify">Verification URL</label><input id="cVerify" type="url" placeholder="https://…"></div><div class="field"><label for="cFileUrl">Existing certificate file URL</label><input id="cFileUrl" placeholder="assets/certificates/my-certificate.pdf"></div></div>
+          <div class="togglebar"><label><input id="cVisible" type="checkbox"> Show on portfolio</label></div>
+          <div class="uploadbox"><h3>Upload a certificate</h3><p>PDF, JPG, PNG, WebP • maximum 8 MB. Preview is local until publishing is enabled.</p><input type="file" id="cUpload" accept="application/pdf,image/jpeg,image/png,image/webp" aria-label="Choose certificate file"><div id="certFileInfo" class="filepreview" aria-live="polite"></div></div>
+        </form>
+        <div class="preview"><div class="eyebrow">Certificate preview</div><div class="sample" style="grid-template-columns:1fr"><div><span class="pill" id="certVisibleLabel">Visible</span><h3 id="certPreviewTitle" style="margin-top:12px"></h3><p id="certPreviewIssuer"></p><p id="certPreviewPeriod" style="margin-top:4px"></p><div id="certPreviewLinks" class="links"></div></div></div></div>
+      </div>
+      <div id="profilePane" role="tabpanel" hidden>
+        <div class="sectionhead"><div><div class="eyebrow">Personal introduction</div><h2>About you</h2><p class="subtle">Keep your hero and about section editable without touching HTML.</p></div></div>
+        <form id="profileForm" class="fields" autocomplete="off">
+          <div class="fieldrow"><div class="field"><label for="uName">Name</label><input id="uName"></div><div class="field"><label for="uPosition">Position / title</label><input id="uPosition"></div></div>
+          <div class="fieldrow"><div class="field"><label for="uLocation">Location</label><input id="uLocation"></div><div class="field"><label for="uAvailability">Availability message</label><input id="uAvailability"></div></div>
+          <div class="fieldrow"><div class="field"><label for="uHeadline">Hero headline</label><input id="uHeadline"></div><div class="field"><label for="uAccent">Highlighted headline</label><input id="uAccent"></div></div>
+          <div class="field"><label for="uBio">Hero introduction</label><textarea id="uBio" rows="4"></textarea></div>
+          <div class="field"><label for="uSpecialties">Specialties</label><textarea id="uSpecialties" rows="2"></textarea><p class="hint">Separate with commas. For example: Software development, Vibe coding, AI/ML</p></div>
+          <div class="field"><label for="uQuote">About section quote</label><input id="uQuote"></div>
+        </form>
+        <div class="preview"><div class="eyebrow">Introduction preview</div><div class="sample" style="grid-template-columns:1fr"><div><span class="pill">Portfolio hero</span><h3 id="profilePreviewHeading" style="margin-top:14px"></h3><p id="profilePreviewBio"></p><div id="profilePreviewSkills" class="chips"></div></div></div></div>
+      </div>
+    </main>
+  </div>
+</div>
+<div id="bottomBar" class="footerbar" hidden><span id="status" class="status" role="status" aria-live="polite">Loading…</span><div class="topactions"><button id="resetBtn" type="button" class="btn small minor">Reset local draft</button><button id="downloadBtn" type="button" class="btn small primary">↓ Export portfolio.json</button><button type="button" id="publishBtn" class="btn small" disabled title="Connect the GitHub token to enable publishing">Publish to GitHub</button></div></div>
+<script src="assets/js/admin-auth.js"></script>
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const clone = (obj) => JSON.parse(JSON.stringify(obj));
+  const key = 'darkraider-portfolio-local-draft-v1';
+  const draftShaKey = key + ':github-blob-sha';
+  const imageTypes = new Set(['image/png', 'image/jpeg', 'image/webp']);
+  const allowedCertTypes = new Set([...imageTypes, 'application/pdf']);
+  const fields = {pTitle:'title', pDescription:'description', pRepo:'repositoryUrl',pLive:'liveUrl',pDownload:'downloadUrl',pIcon:'icon',pImage:'imageUrl',cTitle:'title',cIssuer:'issuer',cPeriod:'period',cCredential:'credentialId',cIssueDate:'issueDate',cExpiryDate:'expiryDate',cDescription:'description',cVerify:'verificationUrl',cFileUrl:'fileUrl',uName:'name',uPosition:'position',uLocation:'location',uAvailability:'availability',uHeadline:'headline',uAccent:'headlineAccent',uBio:'heroBio'};
+  let data, baseline, activeTab='projects', projectId='', certificateIndex=0, draftDirty=false;
+  let publishSha = null, draftSourceSha = null, publishing = false, publishUnavailable = '';
+  const staged = {projectCover:new Map(),screenshots:new Map(),certificate:new Map()};
+  const icon = (tag) => document.createElement(tag);
+  const text = (node,value) => {node.textContent = value == null ? '' : String(value);return node;};
+  const validURL = (value,asset=false) => {
+    if(typeof value!=='string'||!value.trim()) return '';
+    const v=value.trim();
+    if(asset && /^assets\/[a-z0-9_./-]+$/i.test(v) && !v.split('/').includes('..')) return v;
+    try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}
+  };
+  const pRecord=()=>data?.projects.find(p=>p.id===projectId);
+  const cRecord=()=>data?.certifications[certificateIndex];
+  const status=(message)=>{const el=$('status');text(el,message);
+    el.dataset.level = /failed|error|unavailable/i.test(message) ? 'error'
+      : /draft|staged|not uploaded|not published|in memory/i.test(message) ? 'warning'
+      : /loaded|downloaded|restored/i.test(message) ? 'success' : 'neutral';};
+  const setTheme=()=>{const light=document.documentElement.dataset.theme==='light';document.documentElement.dataset.theme=light?'dark':'light';localStorage.setItem('darkraider-admin-theme',light?'dark':'light')};
+  $('themeToggle').addEventListener('click',setTheme);
+  try{document.documentElement.dataset.theme=localStorage.getItem('darkraider-admin-theme')||'dark'}catch{}
+  function syncPublishButton(){
+    const button=$('publishBtn');
+    button.disabled = !publishSha || !draftSourceSha || publishSha !== draftSourceSha || !draftDirty || publishing;
+    button.title = !publishSha ? 'Publishing is not connected to the GitHub API.' :
+      !draftSourceSha || publishSha !== draftSourceSha ? 'An older local draft is open. Export it before resetting to current GitHub content.' :
+      !draftDirty ? 'Make a change before publishing.' : 'Publish the JSON changes to the portfolio-admin branch';
+  }
+  function markDirty(){
+    draftDirty=true;
+    try {
+      localStorage.setItem(key,JSON.stringify(data));
+      if(draftSourceSha)localStorage.setItem(draftShaKey,draftSourceSha);
+      status('Draft saved in this browser • not published');
+    } catch {status('Edited in memory • browser storage unavailable')}
+    syncPublishButton();
+  }
+  function clearUploads(){for(const group of Object.values(staged))for(const entry of group.values()){if(Array.isArray(entry)){entry.forEach(x=>URL.revokeObjectURL(x.url))}else URL.revokeObjectURL(entry.url)}for(const group of Object.values(staged))group.clear()}
+  function onTab(next){activeTab=next;document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===next)));for(const [tab,pane] of [['projects','projectsPane'],['certificates','certificatesPane'],['profile','profilePane']])$(pane).hidden=next!==tab;
+    $('search').hidden=next==='profile';$('addBtn').hidden=next==='profile';$('recordList').hidden=next==='profile';$('addBtn').textContent=next==='projects'?'+ Add project':'+ Add certificate';$('search').placeholder=next==='projects'?'Search projects…':'Search certificates…';$('search').value='';renderList();fillForm();}
+  document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>onTab(btn.dataset.tab)));
+  $('search').addEventListener('input',renderList);
+  function renderList(){const list=$('recordList');list.replaceChildren();if(activeTab==='profile')return;const records=activeTab==='projects'?data.projects:data.certifications;const q=$('search').value.trim().toLowerCase();const shown=records.map((record,index)=>({record,index})).filter(x=>(x.record.title||'').toLowerCase().includes(q));if(!shown.length){const p=icon('p');p.className='empty';list.append(text(p,'No matching items.'));return}
+    shown.forEach(({record,index})=>{const btn=icon('button');btn.type='button';btn.className='item'+((activeTab==='projects'&&record.id===projectId)||(activeTab==='certificates'&&index===certificateIndex)?' selected':'');const box=icon('span');const title=icon('span');title.className='itemname';text(title,record.title||'Untitled');const subtitle=icon('small');text(subtitle,activeTab==='projects'?(record.featured?'★ Featured · ':'')+(record.visible===false?'Hidden':'Visible'):(record.issuer||'Certificate'));
+      box.append(title,subtitle);const badge=icon('span');badge.className='number';text(badge,String(index+1).padStart(2,'0'));btn.append(box,badge);btn.addEventListener('click',()=>{if(activeTab==='projects')projectId=record.id;else certificateIndex=index;fillForm();renderList()});list.append(btn)})}
+  function readURL(v){return validURL(v,true)}
+  function fillForm(){if(activeTab==='projects'){const p=pRecord();if(!p)return;for(const [input,prop] of Object.entries(fields))if(input.startsWith('p')&&$(''+input))$(input).value=p[prop]??'';$('pId').value=p.id||'';$('pTechnologies').value=(p.technologies||[]).join(', ');$('pFeatured').checked=p.featured===true;$('pVisible').checked=p.visible!==false;$('pCoverFile').value='';$('pScreenshotFiles').value='';renderPending('projectCover',p.id,'coverFileInfo');renderPending('screenshots',p.id,'screenshotFileInfo');$('moveUp').disabled=data.projects.findIndex(x=>x.id===projectId)<=0;$('moveDown').disabled=data.projects.findIndex(x=>x.id===projectId)>=data.projects.length-1;renderProjectPreview();}
+    if(activeTab==='certificates'){const c=cRecord();if(!c)return;for(const [input,prop] of Object.entries(fields))if(input.startsWith('c')&&$(input))$(input).value=c[prop]??(input==='cVerify'?c.link||'':'');$('cVisible').checked=c.visible!==false;$('cUpload').value='';renderPending('certificate',certificateIndex,'certFileInfo');renderCertPreview();}
+    if(activeTab==='profile'){const p=data.profile||{};for(const [input,prop] of Object.entries(fields))if(input.startsWith('u')&&input!=='uQuote'&&$(input))$(input).value=p[prop]??'';$('uSpecialties').value=(p.specialties||[]).join(', ');$('uQuote').value=data.about?.quote||'';renderProfilePreview()}}
+  function bindForm(formId,type){$(formId).addEventListener('input',(event)=>{const el=event.target;let record=type==='project'?pRecord():type==='cert'?cRecord():data.profile;
+      if(!record)return;if(el.id==='pTechnologies'||el.id==='uSpecialties'){record[el.id==='pTechnologies'?'technologies':'specialties']=el.value.split(',').map(x=>x.trim()).filter(Boolean)}else if(el.id==='pFeatured'){record.featured=el.checked;if(el.checked)data.projects.forEach(p=>{if(p!==record)p.featured=false})}else if(el.id==='pVisible'||el.id==='cVisible'){record.visible=el.checked}else if(el.id==='uQuote'){data.about=data.about||{};data.about.quote=el.value}else if(fields[el.id]){record[fields[el.id]]=el.value}else return;
+      markDirty();if(type==='project')renderProjectPreview();if(type==='cert')renderCertPreview();if(type==='profile')renderProfilePreview();if(type!=='profile')renderList();});$(formId).addEventListener('submit',e=>e.preventDefault())}
+  bindForm('projectForm','project');bindForm('certificateForm','cert');bindForm('profileForm','profile');
+  function safeAnchor(raw,label){const u=readURL(raw);if(!u)return null;const a=icon('a');a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.className='btn small';text(a,label);return a}
+  function appendLinks(parent,arr){parent.replaceChildren();for(const [href,label] of arr){const a=safeAnchor(href,label);if(a)parent.append(a)}}
+  function renderProjectPreview(){const p=pRecord();if(!p)return;text($('previewTitle'),p.title||'Untitled project');text($('previewDescription'),p.description||'');$('previewFlag').hidden=p.featured!==true;const tags=$('previewChips');tags.replaceChildren(...(p.technologies||[]).slice(0,16).map(t=>{const x=icon('span');x.className='chip';return text(x,t)}));appendLinks($('previewLinks'),[[p.liveUrl,'↗ Live'],[p.repositoryUrl,'↗ GitHub'],[p.downloadUrl,'↓ Download']]);const box=$('projectPreviewImage');box.replaceChildren();const stagedCover=staged.projectCover.get(p.id);const cover=stagedCover?.url||readURL(p.imageUrl);if(cover){const image=icon('img');image.alt='Project cover preview';image.src=cover;image.onerror=()=>{box.replaceChildren(text(icon('span'),'DR'))};box.append(image)}else box.append(text(icon('span'),'DR'));}
+  function renderCertPreview(){const c=cRecord();if(!c)return;text($('certPreviewTitle'),c.title||'Untitled certificate');text($('certPreviewIssuer'),c.issuer||'');text($('certPreviewPeriod'),[c.period,c.credentialId&&'ID: '+c.credentialId].filter(Boolean).join(' · '));text($('certVisibleLabel'),c.visible===false?'Hidden':'Visible');const links=$('certPreviewLinks');appendLinks(links,[[c.fileUrl,'↗ View certificate'],[c.verificationUrl||c.link,'↗ Verify']]);const preview=staged.certificate.get(certificateIndex);if(preview){const a=icon('a');a.href=preview.url;a.target='_blank';a.rel='noopener noreferrer';a.className='btn small';text(a,'↗ Preview selected file');links.prepend(a)}}
+  function renderProfilePreview(){const p=data.profile||{};text($('profilePreviewHeading'),[p.headline,p.headlineAccent].filter(Boolean).join(' '));text($('profilePreviewBio'),p.heroBio||'');$('profilePreviewSkills').replaceChildren(...(p.specialties||[]).map(s=>{const x=icon('span');x.className='chip';return text(x,s)}));}
+  function add(){if(activeTab==='projects'){const ids=new Set(data.projects.map(p=>p.id));let id='new-project',n=2;while(ids.has(id))id='new-project-'+n++;data.projects.push({id,title:'New project',description:'',technologies:[],icon:'fa-solid fa-code',repositoryUrl:'',liveUrl:'',downloadUrl:'',imageUrl:'',featured:false,visible:true});projectId=id;}else if(activeTab==='certificates'){data.certifications.push({title:'New certificate',issuer:'',period:'',credentialId:'',verificationUrl:'',fileUrl:'',description:'',visible:true});certificateIndex=data.certifications.length-1;}markDirty();fillForm();renderList()}
+  $('addBtn').addEventListener('click',add);
+  $('deleteProject').addEventListener('click',()=>{const p=pRecord();if(!p||!confirm('Delete '+p.title+' from this local draft?'))return;const index=data.projects.findIndex(x=>x.id===projectId);data.projects.splice(index,1);if(data.projects.length===0)data.projects.push({id:'new-project',title:'New project',description:'',technologies:[],visible:true,featured:true});projectId=data.projects[Math.min(index,data.projects.length-1)].id;markDirty();fillForm();renderList()});
+  $('deleteCert').addEventListener('click',()=>{const c=cRecord();if(!c||!confirm('Delete '+c.title+' from this local draft?'))return;for(const x of staged.certificate.values())URL.revokeObjectURL(x.url);staged.certificate.clear();data.certifications.splice(certificateIndex,1);if(!data.certifications.length)data.certifications.push({title:'New certificate',issuer:'',visible:true});certificateIndex=Math.min(certificateIndex,data.certifications.length-1);markDirty();fillForm();renderList()});
+  const move=(by)=>{const i=data.projects.findIndex(p=>p.id===projectId),j=i+by;if(i<0||j<0||j>=data.projects.length)return;const moved=data.projects.splice(i,1)[0];data.projects.splice(j,0,moved);markDirty();fillForm();renderList()};$('moveUp').addEventListener('click',()=>move(-1));$('moveDown').addEventListener('click',()=>move(1));
+  function makeEntries(files,mime,max,sizeLimit){return [...files].slice(0,max).filter(file=>{if(!mime.has(file.type)||file.size>sizeLimit){alert(file.name+': unsupported file type or too large.');return false}return true}).map(file=>({name:file.name,url:URL.createObjectURL(file),file}))}
+  function renderPending(group,id,target){const box=$(target);box.replaceChildren();const r=staged[group].get(id);if(!r)return;const items=Array.isArray(r)?r:[r];items.forEach(item=>{const thumb=icon('span');thumb.className='thumb';if(item.file.type.startsWith('image/')){const img=icon('img');img.src=item.url;img.alt='Selected image preview';thumb.append(img)}thumb.append(text(icon('span'),item.name));box.append(thumb)});box.append(text(icon('span'),'Not uploaded to GitHub yet'))}
+  $('pCoverFile').addEventListener('change',e=>{const list=makeEntries(e.target.files,imageTypes,1,5*1024*1024);const old=staged.projectCover.get(projectId);if(old)URL.revokeObjectURL(old.url);if(list.length)staged.projectCover.set(projectId,list[0]);else staged.projectCover.delete(projectId);renderPending('projectCover',projectId,'coverFileInfo');renderProjectPreview();status('Cover image preview staged locally • not uploaded')});
+  $('pScreenshotFiles').addEventListener('change',e=>{const files=makeEntries(e.target.files,imageTypes,5,5*1024*1024);const old=staged.screenshots.get(projectId)||[];old.forEach(i=>URL.revokeObjectURL(i.url));if(files.length)staged.screenshots.set(projectId,files);else staged.screenshots.delete(projectId);renderPending('screenshots',projectId,'screenshotFileInfo');status('Screenshots staged locally • not uploaded')});
+  $('cUpload').addEventListener('change',e=>{const files=makeEntries(e.target.files,allowedCertTypes,1,8*1024*1024);const old=staged.certificate.get(certificateIndex);if(old)URL.revokeObjectURL(old.url);if(files.length)staged.certificate.set(certificateIndex,files[0]);else staged.certificate.delete(certificateIndex);renderPending('certificate',certificateIndex,'certFileInfo');renderCertPreview();status('Certificate staged locally • not uploaded')});
+  $('resetBtn').addEventListener('click',()=>{if(!confirm('Discard local edits and restore content from portfolio.json?'))return;clearUploads();data=clone(baseline);projectId=data.projects[0]?.id||'';certificateIndex=0;draftDirty=false;try{localStorage.removeItem(key);localStorage.removeItem(draftShaKey)}catch{}draftSourceSha=publishSha;fillForm();renderList();syncPublishButton();status('Original GitHub-branch content restored in browser')});
+  $('downloadBtn').addEventListener('click',()=>{const stagedCount=Object.values(staged).reduce((n,m)=>n+m.size,0);if(stagedCount&&!confirm('You have staged images/certificates. The JSON export will NOT include these files. Continue?'))return;const blob=new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'});const url=URL.createObjectURL(blob);const a=icon('a');a.href=url;a.download='portfolio.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);status('JSON downloaded • GitHub and Vercel are unchanged')});
+  $('publishBtn').addEventListener('click',async()=>{
+    if(publishing || !publishSha || !draftDirty || draftSourceSha!==publishSha)return;
+    const stagedCount=Object.values(staged).reduce((total,group)=>total+group.size,0);
+    if(stagedCount){
+      alert('Project photos, screenshots and certificate files are preview-only. They will NOT be uploaded. Remove your staged files before publishing JSON.');
+      return;
+    }
+    if(!confirm('Publish these changes to the portfolio-admin GitHub branch? Vercel will deploy a NEW PREVIEW. Your live main website will not change.'))return;
+    publishing=true;
+    const button=$('publishBtn');
+    const oldLabel=button.textContent;
+    button.textContent='Publishing…';
+    $('app').inert=true;
+    syncPublishButton();
+    status('Publishing to GitHub…');
+    try{
+      const response=await fetch('/api/publish',{
+        method:'POST',
+        credentials:'same-origin',
+        cache:'no-store',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({sha:publishSha,data})
+      });
+      let result;
+      try{result=await response.json()}catch{throw Error('Publishing API did not return JSON. Check the latest Vercel deployment logs.')}
+      if(!response.ok){
+        const message=result?.error||'GitHub publishing failed.';
+        if(response.status===409)throw Error(message+' Keep your draft, export the JSON, then reload to review the latest GitHub content.');
+        throw Error(message);
+      }
+      if(!result?.published || !/^[a-f0-9]{40}$/.test(result.sha||''))throw Error('GitHub responded without a valid file revision. Reload to verify the update.');
+      baseline=clone(data);
+      publishSha=result.sha;
+      draftSourceSha=result.sha;
+      draftDirty=false;
+      try{localStorage.removeItem(key);localStorage.removeItem(draftShaKey)}catch{}
+      status('Published to portfolio-admin! A new Vercel Preview deployment is being built.');
+    }catch(error){
+      status('Publishing failed: '+error.message);
+      alert('Unable to publish: '+error.message+'\n\nYour local draft has been preserved.');
+    }finally{
+      $('app').inert=false;
+      publishing=false;
+      button.textContent=oldLabel;
+      syncPublishButton();
+    }
+  });
+  addEventListener('beforeunload',clearUploads);
+  async function boot(){
+    try{
+      let source=null;
+      publishSha=null;
+      publishUnavailable='';
+      try{
+        const remote=await fetch('/api/publish',{credentials:'same-origin',cache:'no-store'});
+        const result=await remote.json();
+        if(remote.ok && result?.data?.schemaVersion===1 && /^[a-f0-9]{40}$/.test(result.sha||'')){
+          source=result.data;
+          publishSha=result.sha;
+        }else{
+          publishUnavailable=result?.error||'GitHub publishing is not configured yet.';
+        }
+      }catch(error){publishUnavailable='GitHub publishing API is unavailable: '+error.message}
+      if(!source){
+        const response=await fetch('./data/portfolio.json',{cache:'no-store'});
+        if(!response.ok)throw Error('HTTP '+response.status);
+        source=await response.json();
+      }
+      baseline=source;
+      if(baseline.schemaVersion!==1||!Array.isArray(baseline.projects)||!Array.isArray(baseline.certifications))throw Error('Unexpected JSON format');
+      data=clone(baseline);
+      draftSourceSha=publishSha;
+      draftDirty=false;
+      try{
+        const stored=localStorage.getItem(key);
+        if(stored){
+          const draft=JSON.parse(stored);
+          if(draft.schemaVersion===1 && Array.isArray(draft.projects) && Array.isArray(draft.certifications)){
+            data=draft;
+            draftDirty=true;
+            const savedSha=localStorage.getItem(draftShaKey);
+            draftSourceSha=savedSha===publishSha?publishSha:null;
+          }
+        }
+      }catch{}
+      projectId=data.projects[0]?.id||'';
+      certificateIndex=0;
+      $('app').hidden=false;
+      $('bottomBar').hidden=false;
+      onTab('projects');
+      syncPublishButton();
+      if(draftDirty && !draftSourceSha)status('Older draft loaded. Export JSON and Reset local draft before publishing to avoid overwriting newer work.');
+      else if(draftDirty)status('Local draft restored. Publishing is available after review.');
+      else if(publishSha)status('Connected to the latest GitHub content on portfolio-admin. Edit and publish when ready.');
+      else status('Loaded local preview data. Publishing unavailable: '+publishUnavailable);
+    }catch(error){
+      $('loadError').hidden=false;
+      text($('loadError'),'Could not load portfolio data: '+error.message+'. Open the latest Vercel Preview deployment, not a file on your computer.');
+    }
+  }
+  window.PortfolioAdminAuth.start(boot);
+})();
+</script>
+</body>
+</html>
