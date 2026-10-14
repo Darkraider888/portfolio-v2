@@ -229,7 +229,7 @@
         photo.alt = `${featured.title} project cover`;
         photo.loading = 'lazy';
         photo.decoding = 'async';
-        photo.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;';
+        photo.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#0d1117;';
         photo.onerror = () => visual.replaceChildren(...fallback);
         visual.replaceChildren(photo);
       }
