@@ -105,7 +105,8 @@
     });
 
     copyEmail?.addEventListener('click', async () => {
-        const email = 'hasanmehidi2016@gmail.com';
+const email = document.documentElement.dataset.portfolioEmail
+    || 'hasanmehidi2016@gmail.com';
         try {
             await navigator.clipboard.writeText(email);
             copyStatus.textContent = 'Email copied to clipboard.';
