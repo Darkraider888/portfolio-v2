@@ -551,5 +551,10 @@
     "googleScholar": "https://scholar.google.com/citations?user=8WcSaLIAAAAJ&hl=en",
     "x": "https://x.com/Mehedi_Hasan_24",
     "instagram": "https://www.instagram.com/daydreamer_ui/"
+  },
+  "skillsSection": {
+    "headline": "The tools behind the",
+    "accent": "work.",
+    "intro": "No arbitrary percentage bars. These are technologies I have used, studied or worked with in projects and coursework. Hover over a logo to see its name."
   }
 }
