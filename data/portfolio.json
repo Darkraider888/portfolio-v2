@@ -371,6 +371,10 @@
         {
           "name": "Vercel",
           "iconUrl": "https://skillicons.dev/icons?i=vercel"
+        },
+        {
+          "name": "UptimeRobot",
+          "iconUrl": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptimerobot.png"
         }
       ]
     },
