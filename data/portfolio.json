@@ -481,7 +481,8 @@
         ],
         "journal": "Asia Pacific Journal of Energy and Environment",
         "description": "Research focused on heatwave threats in Bangladesh and practical approaches to understanding and mitigating their impact.",
-        "doiUrl": "https://doi.org/10.18034/apjee.v9i2.765"
+        "doiUrl": "https://doi.org/10.18034/apjee.v9i2.765",
+        "visible": true
       }
     ],
     "interests": [
