@@ -73,7 +73,8 @@
       "repositoryUrl": "https://github.com/Darkraider888/Waylo",
       "liveUrl": "https://waylo-darkraider888.onrender.com/feed",
       "featured": true,
-      "visible": true
+      "visible": true,
+      "imageUrl": "assets/projects/waylo/cover-3164719f-a308-4797-910a-df93b69d7827.png"
     },
     {
       "id": "campusvoice",
