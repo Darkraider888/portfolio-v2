@@ -374,7 +374,7 @@
         },
         {
           "name": "UptimeRobot",
-          "iconUrl": "assets/skills/icon-6d9ec93c-cd69-43a4-b33b-c454db070ebc.png"
+          "iconUrl": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptimerobot.png"
         }
       ]
     },
