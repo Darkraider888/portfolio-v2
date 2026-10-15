@@ -12,7 +12,10 @@
     const copyStatus = document.getElementById('copyStatus');
     const year = document.getElementById('year');
 
-    const setTheme = (theme) => {
+    // Initial system preference is not stored as a manual choice.
+    // This lets the Admin Settings theme act as a site default while
+    // visitors can still save their own selection with the theme button.
+    const setTheme = (theme, persist = false) => {
         root.dataset.theme = theme;
         if (themeIcon) {
             themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
@@ -20,10 +23,12 @@
         if (themeToggle) {
             themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
         }
-        try {
-            localStorage.setItem('portfolio-theme', theme);
-        } catch (_) {
-            // Local storage can be unavailable in strict privacy modes.
+        if (persist) {
+            try {
+                localStorage.setItem('portfolio-theme', theme);
+            } catch (_) {
+                // Local storage can be unavailable in strict privacy modes.
+            }
         }
     };
 
@@ -38,7 +43,7 @@
     setTheme(preferredTheme);
 
     themeToggle?.addEventListener('click', () => {
-        setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
+        setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
     });
 
     const onScroll = () => {
@@ -105,7 +110,8 @@
     });
 
     copyEmail?.addEventListener('click', async () => {
-        const email = 'hasanmehidi2016@gmail.com';
+        const email = document.documentElement.dataset.portfolioEmail
+            || 'hasanmehidi2016@gmail.com';
         try {
             await navigator.clipboard.writeText(email);
             copyStatus.textContent = 'Email copied to clipboard.';
